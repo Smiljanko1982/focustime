@@ -1,52 +1,64 @@
-<<<<<<< HEAD
-# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
-
-# dependencies
-node_modules/
-
-# Expo
-.expo/
-dist/
-web-build/
-
-# Native
-*.orig.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-
-# Metro
-.metro-health-check*
-
-# debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
-
-# macOS
+# macOS files
 .DS_Store
-*.pem
 
-# local env files
-.env*.local
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# typescript
-*.tsbuildinfo
-=======
-.architect
-bootstrap.css
-bootstrap.js
-bootstrap.json
-bootstrap.jsonp
-build/
-classic.json
-classic.jsonp
-ext/
-modern.json
-modern.jsonp
-resources/sass/.sass-cache/
-resources/.arch-internal-preview.css
-.arch-internal-preview.css
->>>>>>> origin/main
+# React Native/Expo
+.expo/
+.expo-shared/
+ios/Pods/
+ios/*.xcworkspace
+ios/build/
+android/build/
+android/app/build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# Bundle artifacts
+*.tgz
+
+# Various settings
+.idea/
+*.iml
+.vscode/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Babel cache
+babel-cache/
+
+# Metro bundler cache
+metro-cache/
+metro-bundler-cache/
+
+# Jest
+coverage/
+.jest/
+
+# Detox
+detox/
+
+# Others
+*.log
+*.pid
+*.pid.lock
+*.hprof
+*.app
+*.ipa
+*.apk
+
+# Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
